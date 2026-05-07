@@ -30,11 +30,7 @@ logs/
 Thumbs.db
 .DS_Store
 
-# Compiled files
-*.js
-*.jsx
-!craco.config.js
-!jest.config.js
+# Sourcemaps
 *.map
 
 # Testing
