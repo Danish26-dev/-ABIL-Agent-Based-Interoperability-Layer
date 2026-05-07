@@ -1,0 +1,42 @@
+{
+  "name": "abil-backend",
+  "description": "ABIL - Agent-Based Interoperability Layer Backend",
+  "repository": "https://github.com/Danish26-dev/-ABIL-Agent-Based-Interoperability-Layer",
+  "keywords": ["agents", "interoperability", "bedrock"],
+  "buildCommand": "cd backend && yarn install && yarn build",
+  "startCommand": "cd backend && yarn start",
+  "env": {
+    "AWS_REGION": {
+      "description": "AWS region for Bedrock",
+      "value": "us-east-1"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "AWS access key",
+      "required": true
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "AWS secret key",
+      "required": true
+    },
+    "BEDROCK_MODEL_ID": {
+      "description": "Bedrock model ID",
+      "value": "amazon.nova-pro-v1:0"
+    },
+    "BEDROCK_ENABLED": {
+      "description": "Enable Bedrock reasoning",
+      "value": "true"
+    },
+    "AGENT_MODE": {
+      "description": "Agent execution mode: strands or deterministic",
+      "value": "strands"
+    },
+    "PORT": {
+      "description": "Server port",
+      "value": "4000"
+    },
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  }
+}
