@@ -317,9 +317,9 @@ export const WorkspaceProvider = ({ children }) => {
           if (response.ok) return response.json();
           throw new Error('Failed to update SWS');
         })
-        .then((_result) =>
-          fetch(`${API_URL}/api/systems`).then((r) => r.json())
-        )
+        .then((_result) => {
+          return fetch(`${API_URL}/api/systems`).then((r) => r.json());
+        })
         .then((state) => {
           // Update canonical (SWS) with backend state
           setBusiness((prev) => ({
