@@ -120,47 +120,6 @@ ABIL follows a modular multi-agent architecture:
 
 ## Architecture Overview
 <img width="1219" height="862" alt="ABIL FLOW CHART" src="https://github.com/user-attachments/assets/487838b3-4243-4e9d-8d21-027990175033" />
-```text
-┌─────────────────────────────┐
-│      SWS + Legacy Systems   │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│      Listener Agents        │
-│ Change Detection & Polling  │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│      Decision Agents        │
-│ Routing & Sync Policies     │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│    Translation Agents       │
-│ Canonical Data Mapping      │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│        Sync Agents          │
-│ Bidirectional Propagation   │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│ Conflict Resolution Agents  │
-│ Policy-Driven Reconciliation│
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│        Audit Agents         │
-│ Traceability & Replay       │
-└─────────────────────────────┘
-```
 
 ---
 
