@@ -1,0 +1,22 @@
+/* ABIL Landing Page Styles */
+
+/* Ensure smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base transitions for interactive elements */
+a, button {
+  transition: all 0.2s ease;
+}
+
+/* Custom focus states */
+*:focus-visible {
+  outline: 2px solid #2563EB;
+  outline-offset: 2px;
+}
+
+/* Disable outline on mouse click */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
