@@ -1,5 +1,6 @@
 [build]
-  command = "cd frontend && yarn build"
+  # Ensure devDependencies (craco) are installed before building
+  command = "cd frontend && yarn install --production=false && yarn build"
   publish = "frontend/build"
 
 [context.production.environment]
