@@ -6,3 +6,7 @@
 [context.production.environment]
   # Set your API URL in Netlify dashboard instead of here for security
   # REACT_APP_API_URL = "https://abil-backend-xxxx.render.com"
+  CI = "false"
+
+[context.deploy-preview.environment]
+  CI = "false"
