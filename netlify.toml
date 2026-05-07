@@ -1,0 +1,7 @@
+[build]
+  command = "cd frontend && yarn build"
+  publish = "frontend/build"
+
+[context.production.environment]
+  # Set your API URL in Netlify dashboard instead of here for security
+  # REACT_APP_API_URL = "https://abil-backend-xxxx.render.com"
